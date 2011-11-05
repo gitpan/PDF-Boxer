@@ -1,6 +1,6 @@
 package PDF::Boxer::Content::Text;
 {
-  $PDF::Boxer::Content::Text::VERSION = '0.001'; # TRIAL
+  $PDF::Boxer::Content::Text::VERSION = '0.001';
 }
 use Moose;
 # ABSTRACT: a box that displays text

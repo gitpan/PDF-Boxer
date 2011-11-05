@@ -1,6 +1,6 @@
 package PDF::Boxer::Content::Box;
 {
-  $PDF::Boxer::Content::Box::VERSION = '0.001'; # TRIAL
+  $PDF::Boxer::Content::Box::VERSION = '0.001';
 }
 use Moose;
 # ABSTRACT: a box
@@ -8,34 +8,22 @@ use Moose;
 use Scalar::Util qw/weaken/;
 
 has 'debug'   => ( isa => 'Bool', is => 'ro', default => 0 );
-
 has 'margin'   => ( isa => 'ArrayRef', is => 'ro', default => sub{ [0,0,0,0] } );
-
 has 'border'   => ( isa => 'ArrayRef', is => 'ro', default => sub{ [0,0,0,0] } );
-
 has 'padding'  => ( isa => 'ArrayRef', is => 'ro', default => sub{ [0,0,0,0] } );
-
 has 'children'  => ( isa => 'ArrayRef', is => 'rw', default => sub{ [] } );
-
 
 with 'PDF::Boxer::Role::SizePosition'; #, 'PDF::Boxer::Role::BoxDev';
 
-
 has 'boxer' => ( isa => 'PDF::Boxer', is => 'ro' );
-
 has 'parent'  => ( isa => 'Object', is => 'ro' );
-
 has 'name' => ( isa => 'Str', is => 'ro' );
-
 has 'type' => ( isa => 'Str', is => 'ro', default => 'Box' );
-
 has 'background' => ( isa => 'Str', is => 'ro' );
-
 has 'border_color' => ( isa => 'Str', is => 'ro' );
-
 has 'font' => ( isa => 'Str', is => 'ro', default => 'Helvetica' );
-
 has 'align' => ( isa => 'Str', is => 'ro', default => '' );
+
 
 sub BUILDARGS{
   my ($class, $args) = @_;

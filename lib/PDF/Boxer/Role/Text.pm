@@ -1,6 +1,6 @@
 package PDF::Boxer::Role::Text;
 {
-  $PDF::Boxer::Role::Text::VERSION = '0.001'; # TRIAL
+  $PDF::Boxer::Role::Text::VERSION = '0.001';
 }
 use Moose::Role;
 # ABSTRACT: methods & attributes for text boxes

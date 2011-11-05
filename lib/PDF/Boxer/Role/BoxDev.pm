@@ -1,6 +1,6 @@
 package PDF::Boxer::Role::BoxDev;
 {
-  $PDF::Boxer::Role::BoxDev::VERSION = '0.001'; # TRIAL
+  $PDF::Boxer::Role::BoxDev::VERSION = '0.001';
 }
 use Moose::Role;
 # ABSTRACT: methods to aid development

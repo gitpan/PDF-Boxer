@@ -1,6 +1,6 @@
 package PDF::Boxer::Doc;
 {
-  $PDF::Boxer::Doc::VERSION = '0.001'; # TRIAL
+  $PDF::Boxer::Doc::VERSION = '0.001';
 }
 use Moose;
 # ABSTRACT: Hold PDF::API2 stuff

@@ -1,6 +1,6 @@
 package PDF::Boxer::Content::Grid;
 {
-  $PDF::Boxer::Content::Grid::VERSION = '0.001'; # TRIAL
+  $PDF::Boxer::Content::Grid::VERSION = '0.001';
 }
 use Moose;
 # ABSTRACT: a box of rows with column widths aligned

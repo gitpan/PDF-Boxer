@@ -1,6 +1,6 @@
 package PDF::Boxer::Content::Image;
 {
-  $PDF::Boxer::Content::Image::VERSION = '0.001'; # TRIAL
+  $PDF::Boxer::Content::Image::VERSION = '0.001';
 }
 use Moose;
 # ABSTRACT: a box that displays an image

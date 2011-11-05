@@ -1,6 +1,6 @@
 package PDF::Boxer::SpecParser;
 {
-  $PDF::Boxer::SpecParser::VERSION = '0.001'; # TRIAL
+  $PDF::Boxer::SpecParser::VERSION = '0.001';
 }
 use Moose;
 # ABSTRACT: Convert markup to Perl data

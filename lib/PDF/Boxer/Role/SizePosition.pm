@@ -1,6 +1,6 @@
 package PDF::Boxer::Role::SizePosition;
 {
-  $PDF::Boxer::Role::SizePosition::VERSION = '0.001'; # TRIAL
+  $PDF::Boxer::Role::SizePosition::VERSION = '0.001';
 }
 use Moose::Role;
 # ABSTRACT: size and position stuff
