@@ -1,6 +1,6 @@
 package PDF::Boxer::Content::Text;
 {
-  $PDF::Boxer::Content::Text::VERSION = '0.001';
+  $PDF::Boxer::Content::Text::VERSION = '0.002';
 }
 use Moose;
 # ABSTRACT: a box that displays text
@@ -134,7 +134,7 @@ PDF::Boxer::Content::Text - a box that displays text
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 AUTHOR
 

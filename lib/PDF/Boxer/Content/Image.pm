@@ -1,6 +1,6 @@
 package PDF::Boxer::Content::Image;
 {
-  $PDF::Boxer::Content::Image::VERSION = '0.001';
+  $PDF::Boxer::Content::Image::VERSION = '0.002';
 }
 use Moose;
 # ABSTRACT: a box that displays an image
@@ -76,24 +76,22 @@ around 'render' => sub{
 
   my @args = $self->scale ? ($self->scale/100) : ($self->image->width, $self->image->height);
 
-  if (my $al = $self->valign){
-    if ($al eq 'top'){
-      $y = $self->content_top - $self->image_height;
-    } elsif ($al eq 'center'){
+  foreach($self->valign || ()){
+    /^top/ && do { $y = $self->content_top - $self->image_height };
+    /^cen/ && do { 
       my $bc = $self->content_top - ($self->content_height / 2);
       my $ic = $self->image_height / 2;
       $y = $bc - $ic;
-    }
+    };
   }
 
-  if (my $al = $self->align){
-    if ($al eq 'right'){
-      $x = $self->content_right - $self->image_width;
-    } elsif ($al eq 'center'){
+  foreach($self->align || ()){
+    /^rig/ && do { $x = $self->content_right - $self->image_width };
+    /^cen/ && do { 
       my $bc = $self->content_left + ($self->content_width / 2);
       my $ic = $self->image_width / 2;
       $x = $bc - $ic;      
-    }
+    };
   }
 
   $gfx->image($img, $x, $y, @args);
@@ -115,7 +113,7 @@ PDF::Boxer::Content::Image - a box that displays an image
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 AUTHOR
 

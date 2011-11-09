@@ -1,6 +1,6 @@
 package PDF::Boxer::Content::Column;
 {
-  $PDF::Boxer::Content::Column::VERSION = '0.001';
+  $PDF::Boxer::Content::Column::VERSION = '0.002';
 }
 use Moose;
 # ABSTRACT: a box of boxes stack one above the other
@@ -105,7 +105,7 @@ PDF::Boxer::Content::Column - a box of boxes stack one above the other
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 AUTHOR
 

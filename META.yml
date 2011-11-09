@@ -28,4 +28,4 @@ requires:
   Try::Tiny: 0
   XML::Parser: 0
   namespace::autoclean: 0
-version: 0.001
+version: 0.002

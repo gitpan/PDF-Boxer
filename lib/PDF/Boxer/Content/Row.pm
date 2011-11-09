@@ -1,6 +1,6 @@
 package PDF::Boxer::Content::Row;
 {
-  $PDF::Boxer::Content::Row::VERSION = '0.001';
+  $PDF::Boxer::Content::Row::VERSION = '0.002';
 }
 use Moose;
 # ABSTRACT: a box of boxes laid out side by side
@@ -129,7 +129,7 @@ PDF::Boxer::Content::Row - a box of boxes laid out side by side
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 AUTHOR
 

@@ -1,13 +1,46 @@
+PDF-Boxer
+
+Use my version of a "box model" layout to create PDFs.
+Use PDF::Boxer::SpecParser to parse a template written in the not so patented PDFML.
+Suggestion: Use L<Template> to dynamically create your PDFML template. 
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+  perl Makefile.PL
+  make
+  make test
+  make install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc PDF::Boxer
+
+You can also look for information at:
+
+    RT, CPAN's request tracker (report bugs here)
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=PDF-Boxer
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/PDF-Boxer
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/PDF-Boxer
+
+    Search CPAN
+        http://search.cpan.org/dist/PDF-Boxer/
 
 
-This archive contains the distribution PDF-Boxer,
-version 0.001:
+LICENSE AND COPYRIGHT
 
-  Create PDFs from a simple box markup language.
+Copyright (C) 2011 Jason Galea
 
-This software is copyright (c) 2011 by Jason Galea.
+This program is free software; you can redistribute it and/or modify it
+under the terms of either: the GNU General Public License as published
+by the Free Software Foundation; or the Artistic License.
 
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
-
-
+See http://dev.perl.org/licenses/ for more information.

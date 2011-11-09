@@ -1,6 +1,6 @@
 package PDF::Boxer::SpecParser;
 {
-  $PDF::Boxer::SpecParser::VERSION = '0.001';
+  $PDF::Boxer::SpecParser::VERSION = '0.002';
 }
 use Moose;
 # ABSTRACT: Convert markup to Perl data
@@ -61,6 +61,10 @@ sub mangle_spec{
       $element->[0]{type} = 'Grid';
       push(@{$spec->{children}}, shift @$element);
       $self->mangle_spec($spec->{children}->[-1], $element);
+    } elsif (lc($tag) eq 'doc'){
+      $element->[0]{type} = 'Doc';
+      push(@{$spec->{children}}, shift @$element);
+      $self->mangle_spec($spec->{children}->[-1], $element);
     } else {
       $element->[0]{type} = 'Box';
       push(@{$spec->{children}}, shift @$element);
@@ -71,6 +75,7 @@ sub mangle_spec{
 
 sub clean_text{
   my ($self, $element) = @_;
+  return unless $element;
   return if $element =~ /^[\s\n\r]*$/;
   if ($self->clean_whitespace){
     $element =~ s/^[\s\n\r]+//;
@@ -100,7 +105,7 @@ PDF::Boxer::SpecParser - Convert markup to Perl data
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 AUTHOR
 

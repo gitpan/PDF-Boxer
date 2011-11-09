@@ -1,6 +1,6 @@
 package PDF::Boxer::Role::Text;
 {
-  $PDF::Boxer::Role::Text::VERSION = '0.001';
+  $PDF::Boxer::Role::Text::VERSION = '0.002';
 }
 use Moose::Role;
 # ABSTRACT: methods & attributes for text boxes
@@ -70,7 +70,7 @@ PDF::Boxer::Role::Text - methods & attributes for text boxes
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 AUTHOR
 
