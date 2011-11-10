@@ -1,6 +1,6 @@
 package PDF::Boxer::Doc;
 {
-  $PDF::Boxer::Doc::VERSION = '0.002';
+  $PDF::Boxer::Doc::VERSION = '0.003';
 }
 use Moose;
 # ABSTRACT: Hold PDF::API2 stuff
@@ -9,7 +9,7 @@ use namespace::autoclean;
 
 use PDF::API2;
 
-has 'file' => ( isa => 'Str', is => 'ro', required => 1 );
+has 'file' => ( isa => 'Str', is => 'ro' );
 
 has 'pdf' => ( isa => 'Object', is => 'ro', lazy_build => 1 );
 sub _build_pdf{
@@ -85,7 +85,7 @@ PDF::Boxer::Doc - Hold PDF::API2 stuff
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 AUTHOR
 

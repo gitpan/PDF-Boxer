@@ -1,6 +1,6 @@
 package PDF::Boxer::Content::Image;
 {
-  $PDF::Boxer::Content::Image::VERSION = '0.002';
+  $PDF::Boxer::Content::Image::VERSION = '0.003';
 }
 use Moose;
 # ABSTRACT: a box that displays an image
@@ -113,7 +113,7 @@ PDF::Boxer::Content::Image - a box that displays an image
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 AUTHOR
 

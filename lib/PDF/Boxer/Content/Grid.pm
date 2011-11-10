@@ -1,6 +1,6 @@
 package PDF::Boxer::Content::Grid;
 {
-  $PDF::Boxer::Content::Grid::VERSION = '0.002';
+  $PDF::Boxer::Content::Grid::VERSION = '0.003';
 }
 use Moose;
 # ABSTRACT: a box of rows with column widths aligned
@@ -118,7 +118,7 @@ PDF::Boxer::Content::Grid - a box of rows with column widths aligned
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 AUTHOR
 

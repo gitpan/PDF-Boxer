@@ -1,6 +1,6 @@
 package PDF::Boxer::Role::BoxDev;
 {
-  $PDF::Boxer::Role::BoxDev::VERSION = '0.002';
+  $PDF::Boxer::Role::BoxDev::VERSION = '0.003';
 }
 use Moose::Role;
 # ABSTRACT: methods to aid development
@@ -125,7 +125,7 @@ PDF::Boxer::Role::BoxDev - methods to aid development
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 AUTHOR
 
