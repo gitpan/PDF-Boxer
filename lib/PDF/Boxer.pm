@@ -1,6 +1,6 @@
 package PDF::Boxer;
 {
-  $PDF::Boxer::VERSION = '0.003';
+  $PDF::Boxer::VERSION = '0.004';
 }
 use Moose;
 
@@ -101,7 +101,7 @@ PDF::Boxer - Create PDFs from a simple box markup language.
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 
@@ -221,6 +221,11 @@ row.
 a grid is a column with rows for children. The width of the rows' child elements
 are locked vertically (like an html table).
 
+You can now set the hborder and/or vborder attributes an a grid to display
+gridlines.
+
+eg <grid hborder="1" vborder="1">
+
 =item text
 
 the text element contains.. text! Text is wrapped to fith the width of it's
@@ -331,7 +336,7 @@ Jason Galea <lecstor@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Jason Galea.
+This software is copyright (c) 2012 by Jason Galea.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

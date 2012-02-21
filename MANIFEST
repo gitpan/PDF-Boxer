@@ -6,6 +6,8 @@ Makefile.PL
 README
 dist.ini
 full_test_invoice.pdf
+issue_001.pdf
+issue_001b.pdf
 lib/PDF/Boxer.pm
 lib/PDF/Boxer/Content/Box.pm
 lib/PDF/Boxer/Content/Column.pm

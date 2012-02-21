@@ -1,6 +1,6 @@
 package PDF::Boxer::Content::Text;
 {
-  $PDF::Boxer::Content::Text::VERSION = '0.003';
+  $PDF::Boxer::Content::Text::VERSION = '0.004';
 }
 use Moose;
 # ABSTRACT: a box that displays text
@@ -134,7 +134,7 @@ PDF::Boxer::Content::Text - a box that displays text
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 AUTHOR
 
@@ -142,7 +142,7 @@ Jason Galea <lecstor@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Jason Galea.
+This software is copyright (c) 2012 by Jason Galea.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
